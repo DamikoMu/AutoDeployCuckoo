@@ -16,7 +16,7 @@ function installDependencies() {
 	sudo apt-get install -y vim curl net-tools htop python python-pip python-dev libffi-dev libssl-dev python-virtualenv python-setuptools python-magic python-libvirt ssdeep libjpeg-dev zlib1g-dev swig mongodb postgresql libpq-dev build-essential git libpcre3 libpcre3-dev libpcre++-dev libfuzzy-dev automake make libtool gcc tcpdump dh-autoreconf flex bison libjansson-dev libmagic-dev virtualbox libyaml-dev libpython2.7-dev tcpdump apparmor-utils iptables-persistent
 	
 	# Install Python dependencies
-	sudo pip install -U sqlalchemy==1.3.3 dpkt==1.8.7 jinja2==2.9.6 pymongo==3.0.3 bottle pefile yara-python==3.6.3 requests==2.13.0 python-dateutil==2.4.2 chardet==2.3.0 setuptools psycopg2 pycrypto pydeep distorm3 cuckoo weasyprint==0.36 m2crypto openpyxl ujson pycrypto pytz pyOpenSSL
+	sudo pip install -U sqlalchemy==1.3.3 dpkt==1.8.7 jinja2==2.9.6 pymongo==3.0.3 bottle pefile==2019.4.18 pyrsistent==0.16.1 yara-python==3.6.3 requests==2.13.0 python-dateutil==2.4.2 chardet==2.3.0 setuptools psycopg2 pycrypto pydeep distorm3 cuckoo weasyprint==0.36 m2crypto openpyxl ujson pycrypto pytz pyOpenSSL
 	
 	# Reinstall werkzeug
 	sudo pip uninstall --yes werkzeug && sudo pip install werkzeug==0.16.1
